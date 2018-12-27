@@ -29,7 +29,7 @@ end
 def kesha_maker (array)
   arr = []
   array.each do |string|
-    arr << string[2] = $
+    arr << string[2] = "$"
   end
 
   arr
