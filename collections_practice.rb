@@ -48,7 +48,8 @@ end
 def add_s (array)
   arr = []
   array.each do |string|
-    arr << string + "s" unless string == array[1]
+    string + "s" unless string == array[1]
+    arr << string
   end
 
   arr
