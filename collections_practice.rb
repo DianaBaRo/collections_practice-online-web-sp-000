@@ -46,11 +46,7 @@ def sum_array (array)
 end
 
 def add_s (array)
-  arr = []
-  array.each do |string|
-    string + "s" unless string == array[1]
-    arr << string
+  array.each_with_index do |string, index|
+    string + "s" unless index == 1
   end
-
-  arr
 end
