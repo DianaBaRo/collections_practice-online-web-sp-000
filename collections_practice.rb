@@ -44,3 +44,12 @@ def sum_array (array)
   array.inject(0) { |result, element| result + element }
   
 end
+
+def add_s (array)
+  arr = []
+  array.each do |string|
+    arr << string + "s" unless string == array[1]
+  end
+
+  arr
+end
